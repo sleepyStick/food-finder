@@ -25,10 +25,8 @@ def parse_args() -> List[str]:
 
 
 def get_time() -> Tuple[int, int, int]:
-    day_of_week = datetime.today().isoweekday()
-    curr_time = datetime.now().strftime("%H:%M").split(":")
-    hour, minute = int(curr_time[0]), int(curr_time[1])
-    return day_of_week, hour, minute
+    now = datetime.now()
+    return now.weekday(), now.hour, now.minute
 
 
 def is_open(everything: Dict[str, Dict[str, List[str]]],
@@ -54,10 +52,7 @@ def pick(cravings: Optional[List[str]],
                     return True
             return False
         possible = filter(satasifies, everything)
-    idx = random.randint(0, len(possible)-1)
-    for i, place in enumerate(everything):
-        if i == idx:
-            return place
+    return random.choice(list(possible))
 
 
 def main() -> None:
