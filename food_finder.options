@@ -1,0 +1,13 @@
+{"Sylvesters": {"category": ["burgers", "hot"],
+                "hours": [[11, 21], [11, 21], [11, 21], [11, 21], [11, 21],
+                          [11, 21], [11, 21]],
+                "addr": "1099 Santa Ynez Ave, Baywood-Los Osos, CA 93402"},
+"Eureka!": {"category": ["burgers"],
+            "hours": [[11, 23], [11, 23], [11, 23], [11, 23], [11, 24], 
+                      [11, 24], [11, 24]],
+            "addr": "1141 Chorro Street, San Luis Obispo, CA 93401"},
+"Taste!": {"category": ["burgers"],
+           "hours": [[11, 22], [11, 22], [11, 22], [11, 22], [11, 22],
+                     [11, 22], [11, 22]],
+           "addr": "2900 Broad St, San Luis Obispo, CA 93401"}
+}
